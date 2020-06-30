@@ -16,6 +16,7 @@ namespace Ejercicios05Punto07
                 {
                     Console.WriteLine("Primer temperatura mal ingresada... otra vez por favor");
                 }
+
                 Console.Write("Ingrese la segunda temperatura:");
                 while (!int.TryParse(Console.ReadLine(), out temperatura2))
                 {
@@ -30,6 +31,7 @@ namespace Ejercicios05Punto07
                 {
                     Console.WriteLine("Primer temperatura es mayor o igual a la segunda temp");
                 }
+
             } while (hayError);
 
             for (int tempCelsius = temperatura1; tempCelsius <=temperatura2; tempCelsius++)
@@ -41,7 +43,6 @@ namespace Ejercicios05Punto07
 
         private static double ConvertirFahrenheit(int temperatura)
         {
-
             return 1.8 * temperatura + 32;
         }
     }
